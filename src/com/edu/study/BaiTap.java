@@ -17,7 +17,7 @@ public class BaiTap {
 			a[i] = ds.nextInt();
 		}
 		System.out.println("");
-		
+		// thu di ha
 		
 	}
 	
