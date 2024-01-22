@@ -121,7 +121,6 @@ public class BaiTap {
 	
 	public static void luuFile(int ds[]) throws Exception{
 		List ds1 = Arrays.asList(ds);
-		System.out.println(ds1);
 		File file  = new File("data.txt");
 		if(!file.exists()){
 			file.createNewFile();
@@ -130,7 +129,6 @@ public class BaiTap {
 		for (int i = 0; i < ds.length; i++) {
 		String value = ds[i] +"";
 		int ascii = (int) value.toCharArray()[0] ;
-		System.out.println(ascii);
 		fos.write (ascii);
 		fos.write(32);
 		}
@@ -139,7 +137,6 @@ public class BaiTap {
 		FileInputStream fis = new FileInputStream("src\\data.txt");
 		int ascii ;
 		while((ascii = fis.read())!= -1){
-			System.out.println(ascii);
 		}
 	}
 	
